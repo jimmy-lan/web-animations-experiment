@@ -7,3 +7,7 @@ body {
   background: #f0f0f0;
   font-family: "Roboto", sans-serif;
 }
+
+main {
+  padding: 5% 10%;
+}
