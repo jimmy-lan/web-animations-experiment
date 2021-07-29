@@ -4,5 +4,6 @@ export const useStyles = createUseStyles({
   root: {
     boxSizing: "border-box",
     margin: 0,
+    fontFamily: "Roboto, sans-serif",
   },
 });
