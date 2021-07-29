@@ -12,5 +12,6 @@ export const useStyles = createUseStyles({
     fontWeight: 500,
     letterSpacing: 1.2,
     opacity: 0,
+    animationFillMode: "forwards",
   },
 });
