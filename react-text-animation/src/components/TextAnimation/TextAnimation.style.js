@@ -14,6 +14,7 @@ export const useStyles = createUseStyles({
     },
   },
   animatedSpan: {
+    display: "inline-block",
     "& span": {
       display: "inline-block",
       animationName: "$fade",
