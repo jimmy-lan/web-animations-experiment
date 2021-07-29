@@ -4,7 +4,7 @@ export const useStyles = createUseStyles({
   "@keyframes fade": {
     "0%": {
       opacity: 0,
-      transform: "translateY(60px) skewY(8deg)",
+      transform: "translateY(30px) skewY(8deg)",
       filter: "blur(6px)",
     },
     "100%": {
@@ -19,7 +19,7 @@ export const useStyles = createUseStyles({
       display: "inline-block",
       animationName: "$fade",
       animationDuration: "1.5s",
-      animationTimingFunction: "ease-in-out",
+      animationTimingFunction: "cubic-bezier(0.075, 0.82, 0.165, 1)",
       fontSize: "5rem",
       fontWeight: 500,
       letterSpacing: 1.2,

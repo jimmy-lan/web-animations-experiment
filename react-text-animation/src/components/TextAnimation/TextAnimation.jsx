@@ -9,7 +9,12 @@ export default function TextAnimation({ content }) {
   return (
     <span className={classes.animatedSpan}>
       {charArray.map((char, index) => (
-        <span key={`${char}${index}`}>{char}</span>
+        <span
+          key={`${char}${index}`}
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
+          {char}
+        </span>
       ))}
     </span>
   );
