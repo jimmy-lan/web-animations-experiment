@@ -1,4 +1,4 @@
-import TextAnimation from "./components/TextAnimation/TextAnimation";
+import CharacterAnimation from "./components/CharacterAnimation/CharacterAnimation";
 import { useStyles } from "./App.style";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className={classes.root}>
-      <TextAnimation content="React" />
+      <CharacterAnimation content="React" />
     </div>
   );
 }

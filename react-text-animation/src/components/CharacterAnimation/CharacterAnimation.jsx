@@ -1,7 +1,7 @@
 import React from "react";
-import { useStyles } from "./TextAnimation.style";
+import { useStyles } from "./CharacterAnimation.style";
 
-export default function TextAnimation({ content }) {
+export default function CharacterAnimation({ content }) {
   const classes = useStyles();
 
   const charArray = content.split("");
