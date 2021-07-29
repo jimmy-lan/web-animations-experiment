@@ -11,5 +11,6 @@ export const useStyles = createUseStyles({
     fontSize: "5rem",
     fontWeight: 500,
     letterSpacing: 1.2,
+    opacity: 0,
   },
 });
