@@ -8,5 +8,6 @@ export const useStyles = createUseStyles({
   animatedSpan: {
     animationName: "$fade",
     animationDuration: "6s",
+    fontSize: "5rem",
   },
 });
