@@ -9,5 +9,7 @@ export const useStyles = createUseStyles({
     animationName: "$fade",
     animationDuration: "6s",
     fontSize: "5rem",
+    fontWeight: 500,
+    letterSpacing: 1.2,
   },
 });
