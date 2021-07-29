@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "install": "^0.13.0",
-    "npm": "^7.24.2",
-    "react-jss": "^10.8.0"
-  }
-}
