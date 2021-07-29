@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className={classes.root}>
-      <TextAnimation />
+      <TextAnimation content="React" />
     </div>
   );
 }
