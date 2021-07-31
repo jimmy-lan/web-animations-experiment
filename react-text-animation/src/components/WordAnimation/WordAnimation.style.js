@@ -15,4 +15,5 @@ export const useStyles = createUseStyles({
       opacity: 1,
     },
   },
+  animatedSpan: {},
 });

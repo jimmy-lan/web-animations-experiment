@@ -3,5 +3,5 @@ import { useStyles } from "./WordAnimation.style";
 
 export default function WordAnimation({ content }) {
   const classes = useStyles();
-  return <span></span>;
+  return <span className={classes.animatedSpan}>{content}</span>;
 }
