@@ -1,6 +1,6 @@
 import { createUseStyles } from "react-jss";
 
-const useStyles = createUseStyles({
+export const useStyles = createUseStyles({
   "@keyframe animation": {
     "0%": {
       transform: "translateY(-30px)",
