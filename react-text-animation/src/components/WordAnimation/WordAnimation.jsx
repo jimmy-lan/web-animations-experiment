@@ -1,6 +1,8 @@
 import React from "react";
 import { useStyles } from "./WordAnimation.style";
 
+const SPACE = "\u00a0";
+
 export default function WordAnimation({ content }) {
   const classes = useStyles();
 
@@ -13,7 +15,7 @@ export default function WordAnimation({ content }) {
           style={{ animationDelay: `${0.1 * index}s` }}
           key={`${word}${index}`}
         >
-          {word}
+          {index !== wordList.length - 1 ? word + SPACE : word}
         </span>
       ))}
     </span>
