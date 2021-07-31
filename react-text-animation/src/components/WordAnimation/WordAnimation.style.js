@@ -15,5 +15,7 @@ export const useStyles = createUseStyles({
       opacity: 1,
     },
   },
-  animatedSpan: {},
+  animatedSpan: {
+    display: "inline-block",
+  },
 });
