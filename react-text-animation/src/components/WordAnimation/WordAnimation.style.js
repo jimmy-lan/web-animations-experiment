@@ -7,7 +7,7 @@ export const useStyles = createUseStyles({
       opacity: 0,
     },
     "70%": {
-      transform: "translateY(-10px)",
+      transform: "translateY(-15px)",
       opacity: 0.9,
     },
     "100%": {
@@ -20,8 +20,8 @@ export const useStyles = createUseStyles({
     "& span": {
       display: "inline-block",
       animationName: "$push",
-      animationDuration: "0.3s",
-      animationTimingFunction: "ease-in",
+      animationDuration: "0.5s",
+      animationTimingFunction: "cubic-bezier(0.785, 0.135, 0.15, 0.86)",
       fontSize: "5rem",
       fontWeight: 500,
       letterSpacing: 1.2,
