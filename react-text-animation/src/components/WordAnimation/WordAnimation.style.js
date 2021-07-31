@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 
 export const useStyles = createUseStyles({
-  "@keyframes reveal": {
+  "@keyframes push": {
     "0%": {
       transform: "translateY(50px)",
       opacity: 0,
@@ -19,7 +19,7 @@ export const useStyles = createUseStyles({
     display: "inline-block",
     "& span": {
       display: "inline-block",
-      animationName: "$reveal",
+      animationName: "push",
       animationDuration: "0.3s",
       animationTimingFunction: "ease-in",
       fontSize: "5rem",
