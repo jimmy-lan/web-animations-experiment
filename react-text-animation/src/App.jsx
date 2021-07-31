@@ -1,4 +1,3 @@
-import CharacterAnimation from "./components/CharacterAnimation/CharacterAnimation";
 import { useStyles } from "./App.style";
 import WordAnimation from "./components/WordAnimation/WordAnimation";
 
