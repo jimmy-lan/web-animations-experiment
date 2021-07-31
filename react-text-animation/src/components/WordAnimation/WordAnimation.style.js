@@ -19,7 +19,7 @@ export const useStyles = createUseStyles({
     display: "inline-block",
     "& span": {
       display: "inline-block",
-      animationName: "push",
+      animationName: "$push",
       animationDuration: "0.3s",
       animationTimingFunction: "ease-in",
       fontSize: "5rem",
