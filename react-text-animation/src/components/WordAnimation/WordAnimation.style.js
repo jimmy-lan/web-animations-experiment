@@ -1,7 +1,7 @@
 import { createUseStyles } from "react-jss";
 
 export const useStyles = createUseStyles({
-  "@keyframe animation": {
+  "@keyframes reveal": {
     "0%": {
       transform: "translateY(-30px)",
       opacity: 0,
@@ -19,7 +19,7 @@ export const useStyles = createUseStyles({
     display: "inline-block",
     "& span": {
       display: "inline-block",
-      animationName: "$animation",
+      animationName: "$reveal",
       animationDuration: "1.5s",
       animationTimingFunction: "cubic-bezier(0.075, 0.82, 0.165, 1)",
       fontSize: "5rem",

@@ -9,7 +9,12 @@ export default function WordAnimation({ content }) {
   return (
     <span className={classes.animatedSpan}>
       {wordList.map((word, index) => (
-        <span style={{ animationDelay: `${0.1 * index}s` }}>{word}</span>
+        <span
+          style={{ animationDelay: `${0.1 * index}s` }}
+          key={`${word}${index}`}
+        >
+          {word}
+        </span>
       ))}
     </span>
   );
