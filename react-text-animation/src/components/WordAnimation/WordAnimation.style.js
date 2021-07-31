@@ -19,6 +19,14 @@ export const useStyles = createUseStyles({
     display: "inline-block",
     "& span": {
       display: "inline-block",
+      animationName: "$animation",
+      animationDuration: "1.5s",
+      animationTimingFunction: "cubic-bezier(0.075, 0.82, 0.165, 1)",
+      fontSize: "5rem",
+      fontWeight: 500,
+      letterSpacing: 1.2,
+      opacity: 0,
+      animationFillMode: "forwards",
     },
   },
 });
