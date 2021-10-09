@@ -7,9 +7,7 @@ class Document extends NextDocument<Props> {
   render() {
     return (
       <Html>
-        <Head>
-          <title>Next Animation Experiment</title>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
