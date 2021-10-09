@@ -29,6 +29,8 @@ class Document extends NextDocument<Props> {
 Document.getInitialProps = async (ctx: DocumentContext) => {
   const sheets = new ServerStyleSheets();
 
+  // This render page override is valid according to
+  // https://nextjs.org/docs/advanced-features/custom-document#customizing-renderpage
   const originalRenderPage = ctx.renderPage;
   ctx.renderPage = (options?) =>
     originalRenderPage({
