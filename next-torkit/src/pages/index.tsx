@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   return (
     <Paper className={classes.root}>
       <Typography variant="h1">Animation Experiment</Typography>
+      <Typography variant="h2">Section 1</Typography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
         assumenda consectetur, consequatur distinctio exercitationem incidunt
