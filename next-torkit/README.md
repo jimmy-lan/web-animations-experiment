@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Note
+
+I purchased Torus Kit pro and received the author's written permission to use it in open source projects. You should not use Torus Kit in isolation if you haven't purchase it.
+
 ## Getting Started
 
 First, run the development server:
