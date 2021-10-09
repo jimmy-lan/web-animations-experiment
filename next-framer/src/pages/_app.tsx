@@ -1,10 +1,9 @@
-import "../../public/lib/torus-kit/toruskit.min.css";
 import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/styles";
 import { theme } from "../theme";
-import { CssBaseline, NoSsr } from "@material-ui/core";
+import { CssBaseline } from "@material-ui/core";
 
 /** When we use JSS with server side rendering, new styles are added whenever the client
  * is hydrated. However, old styles are not removed. Call this function on app.render
@@ -31,9 +30,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <NoSsr>
-          <script async src="lib/torus-kit/toruskit.min.js" />
-        </NoSsr>
         <title>Next Animation Experiments</title>
       </Head>
       <ThemeProvider theme={theme}>
