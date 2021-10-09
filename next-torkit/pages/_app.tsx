@@ -1,3 +1,4 @@
+import "../public/lib/torus-kit/toruskit.min.css";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
