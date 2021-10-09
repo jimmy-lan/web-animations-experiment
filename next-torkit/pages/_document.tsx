@@ -14,9 +14,7 @@ class Document extends NextDocument<Props> {
   render() {
     return (
       <Html>
-        <Head>
-          <script async src="lib/torus-kit/toruskit.min.js" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
