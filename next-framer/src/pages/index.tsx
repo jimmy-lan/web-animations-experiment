@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import React from "react";
 import { Paper, Typography } from "@material-ui/core";
 import { useStyles } from "./Home.style";
+import { motion } from "framer-motion";
 
 const Home: NextPage = () => {
   const classes = useStyles();
