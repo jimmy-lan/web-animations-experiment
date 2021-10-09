@@ -8,6 +8,12 @@ theme.typography.h1 = {
   marginBottom: theme.spacing(2),
 };
 
+theme.typography.h2 = {
+  ...theme.typography.h2,
+  fontSize: "2.75rem",
+  marginBottom: theme.spacing(2),
+};
+
 theme.typography.body1 = {
   ...theme.typography.body1,
   fontSize: "1rem",
