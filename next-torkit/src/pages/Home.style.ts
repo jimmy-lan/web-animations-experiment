@@ -5,5 +5,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     root: {
       padding: "20%",
     },
+    sectionTitle: {
+      marginTop: theme.spacing(6),
+    },
   })
 );
