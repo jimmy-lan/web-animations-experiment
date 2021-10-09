@@ -1,9 +1,9 @@
-import "../public/lib/torus-kit/toruskit.min.css";
+import "../../public/lib/torus-kit/toruskit.min.css";
 import type { AppProps } from "next/app";
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/styles";
-import { theme } from "../src/theme";
+import { theme } from "../theme";
 import { CssBaseline } from "@material-ui/core";
 
 /** When we use JSS with server side rendering, new styles are added whenever the client
