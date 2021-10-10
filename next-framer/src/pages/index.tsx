@@ -3,13 +3,16 @@ import React from "react";
 import { Paper, Typography } from "@material-ui/core";
 import { useStyles } from "./Home.style";
 import { motion } from "framer-motion";
+import { RevealTypography } from "../components/RevealTypography";
 
 const Home: NextPage = () => {
   const classes = useStyles();
 
   return (
     <Paper className={classes.root}>
-      <Typography variant="h1">Animation Experiment</Typography>
+      <RevealTypography motionComponent={motion.h1} variant="h1">
+        Animation Experiment
+      </RevealTypography>
       <Typography variant="h2" className={classes.sectionTitle}>
         Section 1
       </Typography>
