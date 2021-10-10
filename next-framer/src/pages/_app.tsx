@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     // This is the right place to call `removeLegacyJss` because app is rendered first on
     // server side, followed by page and document renders. Removing legacy JSS any later can
     // cause collisions in class names.
-    removeLegacyJss();
+    // removeLegacyJss();
   }, []);
 
   return (
