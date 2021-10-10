@@ -13,9 +13,9 @@ const Home: NextPage = () => {
       <RevealTypography motionComponent={motion.h1} variant="h1">
         Animation Experiment
       </RevealTypography>
-      <Typography variant="h2" className={classes.sectionTitle}>
+      <RevealTypography motionComponent={motion.h2} variant="h2">
         Section 1
-      </Typography>
+      </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
         assumenda consectetur, consequatur distinctio exercitationem incidunt
@@ -38,9 +38,9 @@ const Home: NextPage = () => {
         reprehenderit, sapiente ut, veritatis voluptatem. At debitis delectus
         ipsa velit.
       </Typography>
-      <Typography variant="h2" className={classes.sectionTitle}>
+      <RevealTypography motionComponent={motion.h2} variant="h2">
         Section 2
-      </Typography>
+      </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet debitis
         doloribus eum ex labore nemo ratione rerum saepe ut voluptatum? Corporis
@@ -55,9 +55,9 @@ const Home: NextPage = () => {
         rem sint temporibus ullam unde voluptatum! Aspernatur cupiditate id
         saepe voluptas! Animi facere labore sunt? Amet, omnis.
       </Typography>
-      <Typography variant="h2" className={classes.sectionTitle}>
+      <RevealTypography motionComponent={motion.h2} variant="h2">
         Section 3
-      </Typography>
+      </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa
         ex expedita laudantium quaerat quam quo reprehenderit suscipit totam
