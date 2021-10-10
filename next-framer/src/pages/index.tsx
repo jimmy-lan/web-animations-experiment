@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         Animation Experiment
       </RevealTypography>
       <RevealTypography motionComponent={motion.h2} variant="h2">
-        Section 1
+        Section 1: Understanding Framer Motion
       </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         ipsa velit.
       </Typography>
       <RevealTypography motionComponent={motion.h2} variant="h2">
-        Section 2
+        Section 2: Using Framer Motion
       </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet debitis
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         saepe voluptas! Animi facere labore sunt? Amet, omnis.
       </Typography>
       <RevealTypography motionComponent={motion.h2} variant="h2">
-        Section 3
+        Section 3: Advanced Use Cases
       </RevealTypography>
       <Typography variant="body1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid culpa
