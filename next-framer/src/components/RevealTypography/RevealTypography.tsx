@@ -24,20 +24,33 @@ const RevealTypography: FunctionComponent<Props> = (props) => {
     }
   }, [controls, isInView]);
 
+  const wordArray = (children as string).split(" ");
+
   return (
-    <Typography
-      {...typographyProps}
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      transition="0.5s"
-      variants={{
-        visible: { opacity: 1 },
-        hidden: { opacity: 0 },
-      }}
-      component={motionComponent}
-    >
-      {children}
+    <Typography {...typographyProps} ref={ref} component={motionComponent}>
+      {wordArray.map((word, idx) => (
+        <span
+          key={(children as string) + idx}
+          style={{ display: "inline-block", margin: 0, overflow: "hidden" }}
+        >
+          <motion.span
+            animate={controls}
+            initial={{ y: "100%" }}
+            style={{ display: "inline-block" }}
+            variants={{
+              visible: (idx) => ({
+                y: 0,
+                transition: {
+                  delay: idx * 0.1,
+                },
+              }),
+            }}
+            custom={idx}
+          >
+            {idx === wordArray.length - 1 ? word : word + "\u00A0"}
+          </motion.span>
+        </span>
+      ))}
     </Typography>
   );
 };
