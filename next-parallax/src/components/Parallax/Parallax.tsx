@@ -1,5 +1,5 @@
 import React, { FunctionComponent, ReactNode } from "react";
-import { useViewportScroll, useTransform } from "framer-motion";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 interface Props {
   children: ReactNode;
@@ -12,7 +12,7 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   const { scrollY } = useViewportScroll();
   const y = useTransform(scrollY, [100, 200], [0, 500]);
 
-  return <>children</>;
+  return <motion.div style={{ y }}>{children}</motion.div>;
 };
 
 export { Parallax };
