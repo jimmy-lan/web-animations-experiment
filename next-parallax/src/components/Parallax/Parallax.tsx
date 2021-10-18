@@ -3,6 +3,7 @@ import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 interface Props {
   children: ReactNode;
+  offset?: number;
 }
 
 type ParallaxProps = Props;
