@@ -10,6 +10,7 @@ import {
   useViewportScroll,
   useTransform,
   useSpring,
+  useReducedMotion,
 } from "framer-motion";
 
 interface Props {
@@ -21,6 +22,7 @@ type ParallaxProps = Props;
 
 const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   const { children, offset = 50 } = props;
+  const isPreferReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
