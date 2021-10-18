@@ -52,6 +52,10 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
     return () => window.removeEventListener("resize", onResize);
   }, [ref]);
 
+  if (isPreferReducedMotion) {
+    return <>{children}</>;
+  }
+
   return (
     <motion.div ref={ref} style={{ y }}>
       {children}
