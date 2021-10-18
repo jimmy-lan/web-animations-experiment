@@ -25,7 +25,7 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   const initial = elementTop - clientHeight;
   const final = elementTop + offset;
 
-  const y = useTransform(scrollY, [100, 200], [0, 500]);
+  const y = useTransform(scrollY, [initial, final], [offset, -offset]);
 
   useLayoutEffect(() => {
     if (!window) {
