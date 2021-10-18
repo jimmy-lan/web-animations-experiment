@@ -1,4 +1,10 @@
-import React, { FunctionComponent, ReactNode, useRef, useState } from "react";
+import React, {
+  FunctionComponent,
+  ReactNode,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 interface Props {
@@ -12,7 +18,7 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   const { children, offset = 50 } = props;
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>(null);
 
   const { scrollY } = useViewportScroll();
 
@@ -21,7 +27,28 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
 
   const y = useTransform(scrollY, [100, 200], [0, 500]);
 
-  return <motion.div style={{ y }}>{children}</motion.div>;
+  useLayoutEffect(() => {
+    if (!window) {
+      return () => {};
+    }
+    const element = ref.current;
+    const onResize = () => {
+      setElementTop(
+        element!.getBoundingClientRect().top + window.scrollY ||
+          window.pageYOffset
+      );
+      setClientHeight(window.innerHeight);
+    };
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [ref]);
+
+  return (
+    <motion.div ref={ref} style={{ y }}>
+      {children}
+    </motion.div>
+  );
 };
 
 export { Parallax };
