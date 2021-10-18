@@ -5,7 +5,12 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useViewportScroll,
+  useTransform,
+  useSpring,
+} from "framer-motion";
 
 interface Props {
   children: ReactNode;
