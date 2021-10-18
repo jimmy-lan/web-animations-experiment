@@ -30,7 +30,8 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   const initial = elementTop - clientHeight;
   const final = elementTop + offset;
 
-  const y = useTransform(scrollY, [initial, final], [offset, -offset]);
+  const yRange = useTransform(scrollY, [initial, final], [offset, -offset]);
+  const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
   useLayoutEffect(() => {
     if (!window) {
