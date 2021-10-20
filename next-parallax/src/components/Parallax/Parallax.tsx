@@ -16,6 +16,7 @@ import {
 interface Props {
   children: ReactNode;
   offset?: number;
+  [p: string]: any;
 }
 
 type ParallaxProps = Props;
