@@ -13,6 +13,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       right: 0,
       bottom: 0,
       marginLeft: -1500,
+      background: theme.palette.background.home,
     },
     parallaxLayer: {
       position: "absolute",

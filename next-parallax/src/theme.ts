@@ -1,6 +1,18 @@
 import { createTheme } from "@material-ui/core";
 
-export const theme = createTheme({});
+declare module "@material-ui/core/styles/createPalette" {
+  interface TypeBackground {
+    home: string;
+  }
+}
+
+export const theme = createTheme({
+  palette: {
+    background: {
+      home: "#FEDCC8",
+    },
+  },
+});
 
 theme.typography.h1 = {
   ...theme.typography.h1,
