@@ -27,5 +27,15 @@ export const useStyles = makeStyles((theme: Theme) =>
         bottom: 0,
       },
     },
+    parallaxCover: {
+      background: "#2D112B",
+      display: "block",
+      position: "absolute",
+      top: "100%",
+      left: 0,
+      right: 0,
+      height: 2000,
+      zIndex: 2,
+    },
   })
 );

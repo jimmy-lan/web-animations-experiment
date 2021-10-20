@@ -31,6 +31,7 @@ const Home: NextPage = () => {
       <div className={classes.parallaxLayer}>
         <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" />
       </div>
+      <div className={classes.parallaxCover}></div>
     </div>
   );
 };
