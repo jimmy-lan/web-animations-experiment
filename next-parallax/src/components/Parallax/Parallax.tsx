@@ -21,7 +21,7 @@ interface Props {
 type ParallaxProps = Props;
 
 const Parallax: FunctionComponent<ParallaxProps> = (props) => {
-  const { children, offset = 50 } = props;
+  const { children, offset = 50, ...otherProps } = props;
   const isPreferReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);
@@ -53,11 +53,11 @@ const Parallax: FunctionComponent<ParallaxProps> = (props) => {
   }, [ref]);
 
   if (isPreferReducedMotion) {
-    return <>{children}</>;
+    return <div {...otherProps}>{children}</div>;
   }
 
   return (
-    <motion.div ref={ref} style={{ y }}>
+    <motion.div ref={ref} style={{ y }} {...otherProps}>
       {children}
     </motion.div>
   );
