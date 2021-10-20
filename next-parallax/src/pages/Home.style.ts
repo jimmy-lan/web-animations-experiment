@@ -35,7 +35,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       left: 0,
       right: 0,
       height: 2000,
-      zIndex: 2,
+      zIndex: 200,
     },
   })
 );
