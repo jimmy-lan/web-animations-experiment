@@ -1,6 +1,16 @@
 import type { NextPage } from "next";
 import React from "react";
+import { Typography } from "@material-ui/core";
+import Image from "next/image";
 import { useStyles } from "./Home.style";
+
+import layer0 from "../images/layer_0.png";
+import layer1 from "../images/layer_1.png";
+import layer2 from "../images/layer_2.png";
+import layer3 from "../images/layer_3.png";
+import layer4 from "../images/layer_4.png";
+import layer5 from "../images/layer_5.png";
+import layer6 from "../images/layer_6.png";
 
 const Home: NextPage = () => {
   const classes = useStyles();
@@ -11,45 +21,47 @@ const Home: NextPage = () => {
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-300px) scale(4)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true" />
+        <Image src={layer0} objectFit="contain" width="100%" height="100%" />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-250px) scale(3.5)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true" />
+        <Image src={layer1} />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-200px) scale(3)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true" />
+        <Image src={layer2} />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-150px) scale(2.5)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true" />
+        <Image src={layer3} />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-100px) scale(2)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true" />
+        <Image src={layer4} />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(-50px) scale(1.5)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true" />
+        <Image src={layer5} />
       </div>
       <div
         className={classes.parallaxLayer}
         style={{ transform: "translateZ(0) scale(1)" }}
       >
-        <img src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true" />
+        <Image src={layer6} />
       </div>
-      <div className={classes.parallaxCover} />
+      <div className={classes.parallaxCover}>
+        <Typography variant="h1">Hello World!</Typography>
+      </div>
     </div>
   );
 };

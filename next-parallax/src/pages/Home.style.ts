@@ -21,6 +21,8 @@ export const useStyles = makeStyles((theme: Theme) =>
       right: 0,
       bottom: 0,
       left: 0,
+      width: "100%",
+      height: "100%",
       "& img": {
         display: "block",
         position: "absolute",
@@ -36,6 +38,10 @@ export const useStyles = makeStyles((theme: Theme) =>
       right: 0,
       height: 2000,
       zIndex: 200,
+      color: "#f0f0f0",
+      paddingTop: theme.spacing(4),
+      paddingLeft: theme.spacing(6),
+      paddingRight: theme.spacing(6),
     },
   })
 );
