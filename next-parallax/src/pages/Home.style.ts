@@ -3,11 +3,28 @@ import { createStyles, makeStyles, Theme } from "@material-ui/core";
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      padding: "20%",
-      height: "150vh",
+      perspective: 100,
+      height: "100vh",
+      overflowX: "hidden",
+      overflowY: "auto",
+      position: "absolute",
+      top: 0,
+      left: "50%",
+      right: 0,
+      bottom: 0,
+      marginLeft: -1500,
     },
-    sectionTitle: {
-      marginTop: theme.spacing(6),
+    parallaxLayer: {
+      position: "absolute",
+      top: 0,
+      right: 0,
+      bottom: 0,
+      left: 0,
+      "& img": {
+        display: "block",
+        position: "absolute",
+        bottom: 0,
+      },
     },
   })
 );

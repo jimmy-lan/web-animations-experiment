@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import React from "react";
+import Image from "next/image";
 import { Paper, Typography } from "@material-ui/core";
 import { useStyles } from "./Home.style";
 import { Parallax } from "../components";
@@ -8,47 +9,57 @@ const Home: NextPage = () => {
   const classes = useStyles();
 
   return (
-    <Paper elevation={0} className={classes.root}>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-        aliquid asperiores atque aut, debitis dignissimos ducimus eaque, error
-        exercitationem hic illum laudantium modi molestias porro quas saepe
-        tenetur, vel vitae.
-      </Typography>
-      <Parallax>
-        <Typography>Hi there!</Typography>
-      </Parallax>
-    </Paper>
+    <div className={classes.root}>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_0.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_1.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_2.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_3.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_4.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_5.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className={classes.parallaxLayer}>
+        <Image
+          src="https://github.com/samdbeckham/blog/blob/master/dev/_assets/images/articles/firewatch/layer_6.png?raw=true"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+    </div>
   );
 };
 
