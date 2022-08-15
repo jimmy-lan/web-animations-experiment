@@ -21,6 +21,9 @@ const About: FunctionComponent<Props> = (props) => {
         justifyContent: "flex-start",
         padding: (theme) => theme.spacing(2.5),
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
     >
       <Typography
         variant="h2"
